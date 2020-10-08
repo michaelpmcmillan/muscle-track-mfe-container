@@ -19,6 +19,7 @@
           "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.5.5/lib/system/single-spa.min.js",
           "@michaelpmcmillan/root-config": "//localhost:9000/michaelpmcmillan-root-config.js",
           "@michaelpmcmillan/muscle-track-mfe-navbar": "//localhost:9001/michaelpmcmillan-muscle-track-mfe-navbar.js",
+          "@michaelpmcmillan/muscle-track-mfe-login": "//localhost:9005/michaelpmcmillan-muscle-track-mfe-login.js",
           "@michaelpmcmillan/muscle-track-mfe-home": "//localhost:9002/michaelpmcmillan-muscle-track-mfe-home.js",
           "@michaelpmcmillan/muscle-track-mfe-capture-weight-loss-data": "//localhost:9003/michaelpmcmillan-muscle-track-mfe-capture-weight-loss-data.js"
         }
@@ -45,6 +46,9 @@
         <route default>
           <application name="@michaelpmcmillan/muscle-track-mfe-home"></application>
         </route>
+        <route path="login">
+          <application name="@michaelpmcmillan/muscle-track-mfe-login"></application>
+        </route>
         <route path="capture/weight-loss">
           <application name="@michaelpmcmillan/muscle-track-mfe-capture-weight-loss-data"></application>
         </route>
@@ -56,6 +60,7 @@
   <script>
     System.import('@michaelpmcmillan/root-config');
     System.import('@michaelpmcmillan/muscle-track-mfe-navbar');
+    System.import('@michaelpmcmillan/muscle-track-mfe-login');
     System.import('@michaelpmcmillan/muscle-track-mfe-home');
     System.import('@michaelpmcmillan/muscle-track-mfe-capture-weight-loss-data');
   </script>
