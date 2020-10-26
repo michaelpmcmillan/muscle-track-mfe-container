@@ -23,6 +23,7 @@ module.exports = (webpackConfigEnv) => {
           isLocal: webpackConfigEnv && webpackConfigEnv.isLocal === "true",
           orgName,
         },
+        favicon: "./src/favicon.ico",
       }),
     ],
   });
